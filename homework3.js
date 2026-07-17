@@ -78,13 +78,27 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-}
+   let suma = 0;
+
+  for (let i = 0; i < numeros.length; i++) {
+    suma = suma + numeros[i];
+  }
+
+  return suma;
+}  //9
 
 function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-}
+    let suma = 0;
+
+  for (let i = 0; i < resultadosTest.length; i++) {
+    suma = suma + resultadosTest[i];
+  }
+
+  return suma / resultadosTest.length;
+} //10
 
 function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
