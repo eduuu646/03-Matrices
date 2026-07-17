@@ -104,13 +104,37 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-}
+  let mayor = numeros[0];
+
+  for (let i = 1; i < numeros.length; i++) {
+    if (numeros[i] > mayor) {
+      mayor = numeros[i];
+    }
+  }
+
+  return mayor;
+} //11
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-}
+   if (arguments.length === 0) {
+    return 0;
+  }
+
+  if (arguments.length === 1) {
+    return arguments[0];
+  }
+
+  let resultado = 1;
+
+  for (let i = 0; i < arguments.length; i++) {
+    resultado = resultado * arguments[i];
+  }
+
+  return resultado;
+} //12
 
 function cuentoElementos(arreglo) {
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
